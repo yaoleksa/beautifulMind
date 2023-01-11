@@ -1,5 +1,12 @@
 const root = document.getElementById('root');
 const abstract = document.createElement('p');
+const btn = document.createElement('button');
+btn.className = 'button-9';
+btn.innerHTML = 'Try again';
+btn.role = 'button';
+btn.addEventListener('click', () => {
+    window.location.reload();
+});
 const p = document.createElement('p');
 const generator = () => {
     let wordList = '';
@@ -37,4 +44,5 @@ const generator = () => {
 }
 generator();
 root.appendChild(abstract);
+root.appendChild(btn);
 root.appendChild(p);
