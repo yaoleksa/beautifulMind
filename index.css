@@ -1,3 +1,7 @@
+body{
+  background-color: darkseagreen;
+}
+
 .button-9 {
     appearance: button;
     backface-visibility: hidden;
